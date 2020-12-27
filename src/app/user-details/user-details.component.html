@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mt-4">
+      <form>
+        <h2>Add New Employee</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" name="name" aria-describedby="name" placeholder="Enter Name" [(ngModel)]="newUser.name" />
+        </div>
+        <div class="form-group">
+          <label for="designation">Designation:</label>
+          <input type="text" class="form-control" name="designation" placeholder="Enter Designation" [(ngModel)]="newUser.designation" />
+        </div>
+        <div class="form-group">
+          <label for="salary">Salary:</label>
+          <input type="text" class="form-control" name="salary" placeholder="Enter Salary" [(ngModel)]="newUser.salary" />
+        </div>
+        <button type="button" class="btn btn-success mr-2" (click)="saveUser(newUser)">Save</button>
+        <button type="button" class="btn btn-secondary" (click)="cancelNewUser()">Cancel</button>
+      </form>
+    </div>
+  </div>
+</div>
+
